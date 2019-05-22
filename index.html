@@ -12,6 +12,7 @@
     <style>
         .logo{
           display: block;
+          transform: translateY(25%);
           width: 500px;
           height: 500px;
           margin-left:auto;
@@ -20,15 +21,19 @@
         path{
        
         stroke:black;
-        fill:transparent;
         stroke-dashoffset:0;
         stroke-width:5;
-       
+          fill:none;
        
         }
         path#G{ 
           stroke-dasharray:5390;
-          animation:1s fillstrokeG linear}
+          animation-name:fillstrokeG,fillColor;
+          animation-delay:0s,15s;
+          animation-duration:15s,1s;
+          animation-timing-function:linear,ease;
+          animation-fill-mode: forwards,forwards;
+          }
         @keyframes fillstrokeG{
           from{stroke-dashoffset:5390;
           }
@@ -37,7 +42,11 @@
 
         path#D{
           stroke-dasharray:5865;
-          animation:1s fillstrokeD linear
+          animation-name:fillstrokeD,fillColor;
+          animation-delay:0s,15s;
+          animation-duration:15s,1s;
+          animation-timing-function:linear,ease;
+          animation-fill-mode: forwards,forwards;
         }
         @keyframes fillstrokeD{
           from{stroke-dashoffset:5865}
@@ -45,7 +54,11 @@
         }
         path#M{
           stroke-dasharray:6090;
-          animation:1s fillstrokeM linear
+          animation-name:fillstrokeM,fillColor;
+          animation-delay:0s,15s;
+          animation-duration:15s,1s;
+          animation-timing-function:linear,ease;
+          animation-fill-mode: forwards,forwards;
         }
         @keyframes fillstrokeM{
           from{stroke-dashoffset:-6090}
@@ -53,11 +66,20 @@
         }
         path#P{
           stroke-dasharray:4360;
-          animation:1s fillstrokeP linear
+          animation-name:fillstrokeP,fillColor;
+          animation-delay:0s,15s;
+          animation-duration:15s,1s;
+          animation-timing-function:linear,ease;
+          animation-fill-mode: forwards,forwards;
         }
         @keyframes fillstrokeP{
           from{stroke-dashoffset:-4360}
           to{stroke-dashoffset:0}
+        }
+
+        @keyframes fillColor{
+          from{fill:transparent}
+          to{fill:black}
         }
        
     
@@ -81,16 +103,16 @@
  <path id="G"
        
        
-       d="M 70.00,1258.96
+       d="M 70.00,1245.96
           C 70.00,1258.96 140.50,504.31 140.50,504.31
             140.50,504.31 320.00,504.00 320.00,504.00
             570.00,120.00 1250.00,20.00 1596.94,504.00
             1596.94,504.00 1781.00,503.75 1781.00,503.75
-            1232.00,-432.00 -240.00,87.00 70.00,1258.96 Z" />
+            1232.00,-432.00 -240.00,87.00 70.00,1245.96 Z" />
 
  <path id="M"
         
-       d="M 1103.00,524.00
+       d="M 1103.00,520.00
           C 1103.00,524.00 1100.17,559.00 1100.17,559.00
             1100.17,559.00 1095.17,618.00 1095.17,618.00
             1095.17,618.00 1090.83,672.00 1090.83,672.00
@@ -141,7 +163,7 @@
             112.83,1024.00 140.17,732.00 140.17,732.00
             140.17,732.00 152.17,605.00 152.17,605.00
             152.17,605.00 160.00,524.00 160.00,524.00
-            160.00,524.00 1103.00,524.00 1103.00,524.00 Z" />  
+            160.00,524.00 1103.00,524.00 1103.00,520.00 Z" />  
 
 
  <path id="P"
