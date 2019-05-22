@@ -10,6 +10,9 @@
 
 
     <style>
+        :root {
+        --animTime: 2s; 
+          }
         .logo{
           display: block;
           transform: translateY(25%);
@@ -29,8 +32,8 @@
         path#G{ 
           stroke-dasharray:5390;
           animation-name:fillstrokeG,fillColor;
-          animation-delay:0s,15s;
-          animation-duration:15s,1s;
+          animation-delay:0s,var(--animTime);
+          animation-duration:var(--animTime),1s;
           animation-timing-function:linear,ease;
           animation-fill-mode: forwards,forwards;
           }
@@ -43,8 +46,8 @@
         path#D{
           stroke-dasharray:5865;
           animation-name:fillstrokeD,fillColor;
-          animation-delay:0s,15s;
-          animation-duration:15s,1s;
+          animation-delay:0s,var(--animTime);
+          animation-duration:var(--animTime),1s;
           animation-timing-function:linear,ease;
           animation-fill-mode: forwards,forwards;
         }
@@ -55,8 +58,8 @@
         path#M{
           stroke-dasharray:6090;
           animation-name:fillstrokeM,fillColor;
-          animation-delay:0s,15s;
-          animation-duration:15s,1s;
+          animation-delay:0s,var(--animTime);
+          animation-duration:var(--animTime),1s;
           animation-timing-function:linear,ease;
           animation-fill-mode: forwards,forwards;
         }
@@ -67,8 +70,8 @@
         path#P{
           stroke-dasharray:4360;
           animation-name:fillstrokeP,fillColor;
-          animation-delay:0s,15s;
-          animation-duration:15s,1s;
+          animation-delay:0s,var(--animTime);
+          animation-duration:var(--animTime),1s;
           animation-timing-function:linear,ease;
           animation-fill-mode: forwards,forwards;
         }
